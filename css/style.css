@@ -2,11 +2,36 @@
     box-sizing: border-box;
 }
 
+body {
+    background-color: #448;
+    color: #D7D;
+}
+
+header, #nav {
+    display: unset;
+}
+
+#head-spacer {
+    height: 100px;
+}
+
+#scrolled {
+    position: fixed;
+    top: 0;
+    opacity: 50%;
+    background-color: #f5f;
+    z-index: 1;
+}
+
+.row {
+    position: relative;
+}
+
 h1 {
     margin: 50px;
-    color: #fff;
+    color: #ccc;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    text-shadow: 0px 0px 10px #000,
+    text-shadow: 0px 0px 5px #000,
                  1px 1px 0px #888,
                  2px 2px 0px #777,
                  3px 3px 0px #666,
@@ -23,29 +48,65 @@ h1 {
                  14px 6px 0px #000;
 }
 
-.large {
-    height: 250px;
-    width: calc(100% - 20px);
-    border-radius: 3px;
-    margin: 0px 10px 0px 10px;
+.card {
+    background-color: #282;
+    font-weight: bold;
+    text-shadow: 0px 0px 6px #000;
+    position: absolute;
+    height: 50px;
+    width: 250px;
+    border: 2px solid #000;
+    border-radius: 5px;
 }
 
-.large:hover {
-    box-shadow: 0px 0px 2px 2px #000;
+.card:hover {
+    border: 0px;
+    box-shadow: 0px 0px 2px 2px #fff;
     text-shadow: 0px 0px 2px #fff, 0px 0px 5px #ff0, 0px 0px 10px #f00, 0px 0px 15px #000;
+    cursor: default;
 }
 
-.red {
-    background-color: #f00;
-    color: #0ff;
+.used {
+    background-color: #888;
+    color: #fff;
+    font-weight: bold;
+    text-shadow: 1px 1px 1px #000;
+    position: absolute;
+    height: 50px;
+    width: 250px;
+    border: 2px solid #000;
+    border-radius: 5px;
+    visibility: hidden;
 }
 
-.green {
-    background-color: #0f0;
-    color: #808;
+.used {
+    cursor: default;
 }
 
-.blue {
-    background-color: #00f;
-    color: #ff0;
+#tabs {
+    position: relative;
+    margin: 30px;
+}
+
+#description {
+    background-color: #000;
+    border-radius: 5px;
+    margin: 10px;
+    height: 500px;
+    margin: 30px;
+}
+
+.ltgray-back {
+    background-color: #ccc;
+    color: #000;
+}
+
+@media (min-width:768px) and (max-width:991px) {
+
+    .card {
+        position: static;
+    }
+    .used {
+        position: static;
+    }
 }

@@ -11,24 +11,47 @@
 </head>
 <body>
     <header>
-        
+        <div id="head-spacer"></div>
+        <div id="nav">
+            <div id="scrolled"></div>
+        </div>
     </header>
     <h1 class="text-center">Are You Ready For A Test Site?</h1>
-    <main class="container">
+    <main class="container-fluid">
         <div class="row">
-            <div class="col-lg-4">
-                <div class="text-center red large">This site is a work in progress</div>
+            <!-- Selection Card Section-->
+            <div id="tabs-container" class="col-lg-4 col-md-12 d-lg-block d-md-block d-sm-none d-none">
+                <div id="tabs">
+                    <!-- selected/unselected must be in order from top to bottom for proper rendering -->
+                    <div class="text-center card">Our mission</div>
+                    <div class="text-center used">Our mission</div>
+
+                    <div class="text-center card">Our goals</div>
+                    <div class="text-center used">Our goals</div>
+
+                    <div class="text-center card">A sample of our stuff</div>
+                    <div class="text-center used">A sample of our stuff</div>
+                </div>
             </div>
-            <div class="col-lg-4">
-                <div class="text-center green large">Please be patient as I continue to work on it</div>
+
+            <!-- Selected tab description section -->
+            <div class="col-lg-8 col-md-12 d-lg-block d-md-block d-sm-none d-none">
+                <div id="description"></div>
             </div>
-            <div class="col-lg-4">
-                <div class="text-center blue large">THANK YOU!!!</div>
+
+            <hr>
+
+            <!-- Some more information for viewer -->
+            <div class="col-lg-12 ltgray-back">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
             </div>
         </div>
     </main>
 
     <!-- Scripts -->
+    <script src="js/jquery-3.6.3.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
     <script src="js/script.js"></script>
 </body>
 </html>
